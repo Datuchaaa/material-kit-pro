@@ -47,6 +47,16 @@ export const useSections = () => {
                 <File01Icon />
               </SvgIcon>
             ),
+            
+          },
+          {
+            title: 'QR Generator',
+            path: paths.qrcodegenerator,
+            icon: (
+              <SvgIcon fontSize="small">
+                <File01Icon />
+              </SvgIcon>
+            ),
           },
         ],
       },
