@@ -6,6 +6,7 @@ import { Layout as DashboardLayout } from 'src/layouts/dashboard';
 import HomePage from 'src/pages';
 import BlankPage from 'src/pages/blank';
 import Satistcs from 'src/pages/statistics';
+import QRCodeGenerator from 'src/pages/QRCodeGenerator';
 
 export const routes: RouteObject[] = [
   {
@@ -23,11 +24,15 @@ export const routes: RouteObject[] = [
       },
       {
         path: '/blank',
-        element: <BlankPage />,
+        element: <BlankPage />
       },
       {
         path: '/statistcs',
         element: <Satistcs />,
+      },
+      {
+        path: '/qrcodegenerator',
+        element: <QRCodeGenerator />,
       },
     ],
   },

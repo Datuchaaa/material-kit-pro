@@ -242,6 +242,7 @@ export const SideNavItem: FC<SideNavItemProps> = (props) => {
         >
           {title}
         </Box>
+        
         {label && (
           <Box
             component="span"
@@ -249,9 +250,12 @@ export const SideNavItem: FC<SideNavItemProps> = (props) => {
           >
             {label}
           </Box>
+          
         )}
+        
       </ButtonBase>
     </li>
+    
   );
 };
 
