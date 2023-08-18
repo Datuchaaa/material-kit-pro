@@ -16,7 +16,7 @@ const QRCodeGenerator: React.FC = () => {
   };
 
   return (
-    <div className='qrgeneratot-wrapper'>
+    <div className='qrgenerator-wrapper'>
       <h1>QR Code Generator</h1>
       <Formik
         initialValues={{ text: '' }}

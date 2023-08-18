@@ -7,6 +7,8 @@ import File01Icon from 'src/icons/untitled-ui/duocolor/file-01';
 import HomeSmileIcon from 'src/icons/untitled-ui/duocolor/home-smile';
 import { tokens } from 'src/locales/tokens';
 import { paths } from 'src/paths';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLock, faQrcode } from "@fortawesome/free-solid-svg-icons";
 
 export interface Item {
   disabled?: boolean;
@@ -53,9 +55,14 @@ export const useSections = () => {
             title: 'QR Generator',
             path: paths.qrcodegenerator,
             icon: (
-              <SvgIcon fontSize="small">
-                <File01Icon />
-              </SvgIcon>
+              <FontAwesomeIcon icon={faQrcode} />
+            ),
+          },
+          {
+            title: 'Password Generator',
+            path: paths.passwordgenerator,
+            icon: (
+              <FontAwesomeIcon icon={faLock} />
             ),
           },
         ],

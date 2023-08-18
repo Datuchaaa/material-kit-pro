@@ -7,6 +7,7 @@ import HomePage from 'src/pages';
 import BlankPage from 'src/pages/blank';
 import Satistcs from 'src/pages/statistics';
 import QRCodeGenerator from 'src/pages/QRCodeGenerator';
+import PasswordGenerator from 'src/pages/PasswordGenerator';
 
 export const routes: RouteObject[] = [
   {
@@ -33,6 +34,10 @@ export const routes: RouteObject[] = [
       {
         path: '/qrcodegenerator',
         element: <QRCodeGenerator />,
+      },
+      {
+        path: '/passwordgenerator',
+        element: <PasswordGenerator />,
       },
     ],
   },
